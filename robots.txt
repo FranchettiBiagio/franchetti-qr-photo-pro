@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://franchettibiagio.github.io/franchetti-qr-photo-pro/sitemap.xml

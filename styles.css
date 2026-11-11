@@ -497,8 +497,14 @@ h2 {
 
 /* Promo graphics */
 
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 34px;
+}
 .promo-figure {
-  margin: 34px 0 0;
+  margin: 0;
 }
 .promo-figure a {
   display: block;
@@ -514,9 +520,23 @@ h2 {
   height: auto;
 }
 .promo-figure figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  align-items: baseline;
+  justify-content: space-between;
   margin-top: 12px;
   color: var(--muted);
   font-size: .92rem;
+}
+.promo-download {
+  color: var(--gold);
+  font-size: .86rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.promo-download:hover {
+  text-decoration: underline;
 }
 
 /* Download */
@@ -614,6 +634,7 @@ h2 {
   .strip-grid { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: 1fr; }
   .shots { grid-template-columns: 1fr; }
+  .promo-grid { grid-template-columns: 1fr; gap: 34px; }
   .section, .privacy-band { padding: 70px 0; }
   .download-card { padding: 28px; }
 }
